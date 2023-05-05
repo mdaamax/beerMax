@@ -16,15 +16,23 @@ if (!empty($_POST['title'])
     $alc = $_POST['alc'];
     $price = $_POST['price'];
     $description = $_POST['description'];
-    if (createProduct($title, $type_id, $alc,$price,$description)) {
+    $file = $_FILES['img'];
+    if (createProduct($title, $type_id, $alc,$price,$description,$file)) {
         header('Location: index.php');
     } else {
         $error = 'Ошибка при создании темы';
     }
 }
+
+if (!empty($_FILES)){
+    $type = $_FILES['myFile']['type'];
+    $file = file_get_contents($_FILES['myFile']['tmp_name']);
+    $file = base64_decode($file);
+}
+
 ?>
 
-<form method="post">
+<form method="post" enctype="multipart/form-data">
     <label> Название товара </label>
     <input type="text" name="title">
     <br>
@@ -41,5 +49,6 @@ if (!empty($_POST['title'])
     <label> Описание: </label>
     <textarea name="description"></textarea>
     <br>
+    <input type="file" name="img">
     <input type="submit">
 </form>
