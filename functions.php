@@ -69,18 +69,18 @@ function createProductType($name)
     return isset($product_type);
 }
 
-function createMessage($message, $userId, $topicId)
-{
-    $message_id = insert("INSERT INTO messages (text, user_id, topic_id)
-                            VALUES (:text, :user_id, :topic_id)",
-        [
-            'text' => $message,
-            'user_id' => $userId,
-            'topic_id' => $topicId,
-        ]
-    );
-    return isset($message_id);
-}
+//function createMessage($message, $userId, $topicId)
+//{
+//    $message_id = insert("INSERT INTO messages (text, user_id, topic_id)
+//                            VALUES (:text, :user_id, :topic_id)",
+//        [
+//            'text' => $message,
+//            'user_id' => $userId,
+//            'topic_id' => $topicId,
+//        ]
+//    );
+//    return isset($message_id);
+//}
 
 function getProductTypes()
 {
@@ -97,7 +97,7 @@ function getProductList()
 
 function getProductById($product_id)
 {
-    $list = select('SELECT title,description,catalog.id ,price,alc,name as type FROM  catalog
+    $list = select('SELECT title,description,file_id,catalog.id ,price,alc,name as type FROM  catalog
 left join type t on t.id = catalog.type_id where catalog.id=:id', [
         'id' => $product_id
     ]);
@@ -110,3 +110,27 @@ function getFileById($file_id)
     ]);
     return 'data:'.$list [0]['type'].';base64,'.$list [0]['content'];
 }
+
+function deleteById()
+{
+    $list = delete('DELETE title,description,id,price,file_id FROM catalog ORDER BY id');
+    return $list;
+}
+
+
+//function createTopic($topicTitle, $message, $userId)
+//{
+//    $topic_id = insert("INSERT INTO topics (title) VALUES (:title)", [
+//        'title' => $topicTitle,
+//    ]);
+//    $message_id = insert("INSERT INTO messages (text, user_id, topic_id)
+//                            VALUES (:text, :user_id, :topic_id)",
+//        [
+//            'text' => $message,
+//            'user_id' => $userId,
+//            'topic_id' => $topic_id,
+//        ]
+//    );
+//    return isset($message_id);
+//}
+

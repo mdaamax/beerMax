@@ -62,10 +62,13 @@ $productList = getProductList();
                                     <li class="nav-item">
                                         <a class="nav-link" href="create_product.php">Создание товара</a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="delete_product.php">Удаление товара</a>
+                                    </li>
                                 <?php endif; ?>
                             <?php else: ?>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="register_form.php">Войти в профиль</a>
+                                    <a class="nav-link" href="auth_form.php">Войти в профиль</a>
                                 </li>
                             <?php endif; ?>
                             <li class="nav-item">
@@ -84,11 +87,9 @@ $productList = getProductList();
 
         <div class="row align-items-center">
             <div class="text_logo">
-                <h1>ПИВО <strong>ПИТЬ</strong> СРОЧНО</h1>
-                <small>ПОКА НЕ ПРИДУМАЛ</small>
-                <div class="more">
-                    <a href="#" class="link-dark"><strong>more</strong></a>
-                </div>
+                <h1>ПИВО  <strong>ЖИДКОЕ</strong> СЧАСТЬЕ</h1>
+                <small>Запрещено лицам моложе 18 лет</small>
+
             </div>
         </div>
     </div>
@@ -137,7 +138,7 @@ $productList = getProductList();
     <div class="container-xxl text-center">
         <div class="row">
             <div class="planet_n">
-                <h1><strong>ЧТО-ТО ПРО ПИВО</strong></h1>
+                <h1><strong>НАШИ ТЕХНОЛОГИИ</strong></h1>
             </div>
         </div>
     </div>
@@ -151,8 +152,8 @@ $productList = getProductList();
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">ИЗМЕНИТЬ</h5>
-                            <p class="card-text"><small class="text-muted">#SAVEPLANET #WORLD </small></p>
+                            <h5 class="card-title">ХМЕЛЬ</h5>
+                            <p class="card-text"><small class="text-muted">#DRINK #BEER </small></p>
                             <p class="card-text">Хмель в пивоварении применяют с древнейших времен.
                                 Именно он придает пенному напитку характерный вкус и аромат.
                                 Для изготовления пива используют плоды обыкновенного хмеля – многолетнего
@@ -172,13 +173,11 @@ $productList = getProductList();
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">ИЗМЕНИТЬ</h5>
-                            <p class="card-text"><small class="text-muted">#SPACE</small></p>
-                            <p class="card-text">Терминатор – линия светораздела, отделяющая освещённую часть
-                                космического тела от неосвещённой.
-
-                                Размытая линия терминатора говорит о наличии у планеты или её спутника атмосферы и
-                                наоборот.dhgdthrtehrteh</p>
+                            <h5 class="card-title">НАУКА</h5>
+                            <p class="card-text"><small class="text-muted">#DRINK #BEER </small></p>
+                            <p class="card-text">Наука, изучающая пиво, называется Zythology (Зитология).
+                                Термин образован от двух греческих слов: «Zythos» (пиво) и «Logos» (исследование). А в Германии существует Мюнхенский институт пива,
+                                ученые которого научно доказали, что благодаря уникальному составу 1 литр нефильтрованного немецкого пива в 10 раз полезнее, чем 1 литр молока.</p>
                         </div>
                     </div>
                 </div>
@@ -193,13 +192,11 @@ $productList = getProductList();
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">ИЗМЕНИТЬ</h5>
-                            <p class="card-text"><small class="text-muted">#SPACE</small></p>
-                            <p class="card-text">Терминатор – линия светораздела, отделяющая освещённую часть
-                                космического тела от неосвещённой.
-
-                                Размытая линия терминатора говорит о наличии у планеты или её спутника атмосферы и
-                                наоборот.</p>
+                            <h5 class="card-title">ДОСТАВКА</h5>
+                            <p class="card-text"><small class="text-muted">#DRINK #BEER</small></p>
+                            <p class="card-text">Доставка осуществляется во все регионы России. Наличие множества транспортных компаний с их складами и терминалами в каждом крупном городе
+                                России делает беспроблемным заказ товаров в нашей компании и получение его Вами.
+                                Получив оплату за товар, мы в течение 2-3 дней отгружаем его на ваш адрес</p>
                         </div>
                     </div>
                 </div>
@@ -217,17 +214,17 @@ $productList = getProductList();
             <div class="heading-content text-center">
                 <h1><strong>Наши товары</strong></h1>
             </div>
-<!--            <div class="row">-->
-<!--                <div class="main_mix_content whitebackground text-center">-->
-<!--                    <div class="main_mix_menu">-->
-<!--                        <button type="button" class="btn btn-light"><h5> All <span>/</span></h5></button>-->
-<!--                        <button type="button" class="btn btn-light"><h5>architecture <span>/</span></h5></button>-->
-<!--                        <button type="button" class="btn btn-light"><h5>Interior & Furniture Design <span>/</span></h5>-->
-<!--                        </button>-->
-<!--                        <button type="button" class="btn btn-light"><h5>Research & Graphic Design</h5></button>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
+            <!--            <div class="row">-->
+            <!--                <div class="main_mix_content whitebackground text-center">-->
+            <!--                    <div class="main_mix_menu">-->
+            <!--                        <button type="button" class="btn btn-light"><h5> All <span>/</span></h5></button>-->
+            <!--                        <button type="button" class="btn btn-light"><h5>architecture <span>/</span></h5></button>-->
+            <!--                        <button type="button" class="btn btn-light"><h5>Interior & Furniture Design <span>/</span></h5>-->
+            <!--                        </button>-->
+            <!--                        <button type="button" class="btn btn-light"><h5>Research & Graphic Design</h5></button>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
         </div>
     </div>
 
@@ -240,14 +237,15 @@ $productList = getProductList();
             <?php foreach ($productList as $product): ?>
                 <div class="col gy-5">
                     <div class="card" style="width: 20rem;">
-<!--                        <img src="https://images.squarespace-cdn.com/content/v1/5287bee0e4b0fd595cc2a60f/1496155488416-4GXO8IFEZSKI8O4N3ZSB/ke17ZwdGBToddI8pDm48kMidd_fVERlblIIVuIb_11BZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpx10iUG6tfMgCBB2It1X-YJ7A5R-MhySWbfhJf8kid0Axv9bsT1zvOjTQZv2qL2czQ/Bottle-of-beer-mock-up-TOONILLA+WEB.png"-->
-                        <img src="<?= getFileById($product['file_id'])?>"
-                             class="card-img-top" alt="...">
+                        <!--                        <img src="https://images.squarespace-cdn.com/content/v1/5287bee0e4b0fd595cc2a60f/1496155488416-4GXO8IFEZSKI8O4N3ZSB/ke17ZwdGBToddI8pDm48kMidd_fVERlblIIVuIb_11BZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpx10iUG6tfMgCBB2It1X-YJ7A5R-MhySWbfhJf8kid0Axv9bsT1zvOjTQZv2qL2czQ/Bottle-of-beer-mock-up-TOONILLA+WEB.png"-->
+                        <img src="<?= getFileById($product['file_id']) ?>"
+                             class="card-img-top" style="width: 8rem;margin: auto"  alt="...">
                         <div class="card-body">
-                            <h5 class="card-title"><?=$product['title']?></h5>
-                            <p class="card-price"><?=$product['price']?> ₽</p>
+                            <h5 class="card-title"><?= $product['title'] ?></h5>
+                            <p class="card-price"><?= $product['price'] ?> ₽</p>
                             <hr>
-                            <a class="btn btn-primary" href="product.php?product_id=<?=$product['id']?>" role="button">Открыть</a>
+                            <a class="btn btn-primary" href="product.php?product_id=<?= $product['id']?>"
+                               role="button">Открыть</a>
                         </div>
                     </div>
                 </div>
@@ -260,144 +258,144 @@ $productList = getProductList();
 </section>
 
 
-<section>
-    <div class="container-fluid">
-        <div class="why_shoose_us">
-            <div class="heading-content text-center">
-                <h1><strong>WHY CHOOSE US</strong></h1>
-                <img src="separator.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="container text-center">
-        <div class="col">
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="portfolio/11.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Нанотехнологии</h5>
-                            <p class="card-text">Но стремящиеся вытеснить традиционное производство, нанотехнологии и по
-                                сей день остаются уделом либералов, которые жаждут быть обнародованы. Есть над чем
-                                задуматься: диаграммы связей указаны как претенденты на роль ключевых факторов.</p>
-                            <p class="card-text"><small class="text-muted">Последнее обновление 3 мин. назад</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="portfolio/22.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Заголовок карточки</h5>
-                            <p class="card-text">Это более широкая карта с вспомогательным текстом ниже в качестве
-                                естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
-                            <p class="card-text"><small class="text-muted">Последнее обновление 3 мин. назад</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="portfolio/33.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Заголовок карточки</h5>
-                            <p class="card-text">Это более широкая карта с вспомогательным текстом ниже в качестве
-                                естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
-                            <p class="card-text"><small class="text-muted">Последнее обновление 3 мин. назад</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="portfolio/44.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body_1">
-                            <h5 class="card-title">Заголовок карточки</h5>
-                            <p class="card-text">Это более широкая карта с вспомогательным текстом ниже в качестве
-                                естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
-                            <p class="card-text"><small class="text-muted">Последнее обновление 3 мин. назад</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<!--<section>-->
+<!--    <div class="container-fluid">-->
+<!--        <div class="why_shoose_us">-->
+<!--            <div class="heading-content text-center">-->
+<!--                <h1><strong>WHY CHOOSE US</strong></h1>-->
+<!--                <img src="separator.png" alt="">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="container text-center">-->
+<!--        <div class="col">-->
+<!--            <div class="card mb-3" style="max-width: 540px;">-->
+<!--                <div class="row g-0">-->
+<!--                    <div class="col-md-4">-->
+<!--                        <img src="portfolio/11.png" class="img-fluid rounded-start" alt="...">-->
+<!--                    </div>-->
+<!--                    <div class="col-md-8">-->
+<!--                        <div class="card-body">-->
+<!--                            <h5 class="card-title">Нанотехнологии</h5>-->
+<!--                            <p class="card-text">Но стремящиеся вытеснить традиционное производство, нанотехнологии и по-->
+<!--                                сей день остаются уделом либералов, которые жаждут быть обнародованы. Есть над чем-->
+<!--                                задуматься: диаграммы связей указаны как претенденты на роль ключевых факторов.</p>-->
+<!--                            <p class="card-text"><small class="text-muted">Последнее обновление 3 мин. назад</small></p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col">-->
+<!--            <div class="card mb-3" style="max-width: 540px;">-->
+<!--                <div class="row g-0">-->
+<!--                    <div class="col-md-4">-->
+<!--                        <img src="portfolio/22.png" class="img-fluid rounded-start" alt="...">-->
+<!--                    </div>-->
+<!--                    <div class="col-md-8">-->
+<!--                        <div class="card-body">-->
+<!--                            <h5 class="card-title">Заголовок карточки</h5>-->
+<!--                            <p class="card-text">Это более широкая карта с вспомогательным текстом ниже в качестве-->
+<!--                                естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>-->
+<!--                            <p class="card-text"><small class="text-muted">Последнее обновление 3 мин. назад</small></p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col">-->
+<!--            <div class="card mb-3" style="max-width: 540px;">-->
+<!--                <div class="row g-0">-->
+<!--                    <div class="col-md-4">-->
+<!--                        <img src="portfolio/33.png" class="img-fluid rounded-start" alt="...">-->
+<!--                    </div>-->
+<!--                    <div class="col-md-8">-->
+<!--                        <div class="card-body">-->
+<!--                            <h5 class="card-title">Заголовок карточки</h5>-->
+<!--                            <p class="card-text">Это более широкая карта с вспомогательным текстом ниже в качестве-->
+<!--                                естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>-->
+<!--                            <p class="card-text"><small class="text-muted">Последнее обновление 3 мин. назад</small></p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col">-->
+<!--            <div class="card mb-3" style="max-width: 540px;">-->
+<!--                <div class="row g-0">-->
+<!--                    <div class="col-md-4">-->
+<!--                        <img src="portfolio/44.png" class="img-fluid rounded-start" alt="...">-->
+<!--                    </div>-->
+<!--                    <div class="col-md-8">-->
+<!--                        <div class="card-body_1">-->
+<!--                            <h5 class="card-title">Заголовок карточки</h5>-->
+<!--                            <p class="card-text">Это более широкая карта с вспомогательным текстом ниже в качестве-->
+<!--                                естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>-->
+<!--                            <p class="card-text"><small class="text-muted">Последнее обновление 3 мин. назад</small></p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 
 
-<section class="our_team">
-    <div class="container-xxl">
-        <div class="row">
-            <div class="our_t"> <!--ОТСТУПЫ ОТ ЗАГОЛОВКА-->
-                <h1><strong>OUR TEAM</strong></h1>
-                <img src="separator.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="container text-center">
-        <div class="row align-items-start">
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="11космос.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-text">John Doe</h5>
-                        <em><small>Senior Designer</small></em>
-                        <hr>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="космос2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-text">John Doe</h5>
-                        <em><small>Senior Designer</small></em>
-                        <hr>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="космос3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-text">John Doe</h5>
-                        <em><small>Senior Designer</small></em>
-                        <hr>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="космос4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-text">John Doe</h5>
-                        <em><small>Senior Designer</small></em>
-                        <hr>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</section>
+<!--<section class="our_team">-->
+<!--    <div class="container-xxl">-->
+<!--        <div class="row">-->
+<!--            <div class="our_t"> -->
+<!--                <h1><strong>OUR TEAM</strong></h1>-->
+<!--                <img src="separator.png" alt="">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="container text-center">-->
+<!--        <div class="row align-items-start">-->
+<!--            <div class="col">-->
+<!--                <div class="card" style="width: 18rem;">-->
+<!--                    <img src="11космос.jpg" class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-text">John Doe</h5>-->
+<!--                        <em><small>Senior Designer</small></em>-->
+<!--                        <hr>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col">-->
+<!--                <div class="card" style="width: 18rem;">-->
+<!--                    <img src="космос2.jpg" class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-text">John Doe</h5>-->
+<!--                        <em><small>Senior Designer</small></em>-->
+<!--                        <hr>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col">-->
+<!--                <div class="card" style="width: 18rem;">-->
+<!--                    <img src="космос3.jpg" class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-text">John Doe</h5>-->
+<!--                        <em><small>Senior Designer</small></em>-->
+<!--                        <hr>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col">-->
+<!--                <div class="card" style="width: 18rem;">-->
+<!--                    <img src="космос4.jpg" class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-text">John Doe</h5>-->
+<!--                        <em><small>Senior Designer</small></em>-->
+<!--                        <hr>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!---->
+<!--</section>-->
 
 
 <!--<section class="videos">-->
@@ -622,36 +620,36 @@ $productList = getProductList();
 
 <!--</section>-->
 
-
-<section class="thank_you">
-
-    <div class="container-fluid text-center">
-        <div class="why_shoose_us">
-            <div class="heading-content text-center">
-                <h1><strong>Спасибо!</strong></h1>
-            </div>
-        </div>
-        <div class="container overflow-hidden text-center">
-            <div class="mb-5">
-                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="имя">
-            </div>
-        </div>
-        <div class="container overflow-hidden text-center">
-            <div class="mb-5">
-                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="e-mail">
-            </div>
-        </div>
-        <div class="container overflow-hidden text-center">
-            <div class="mb-5">
-                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="сообщение"></textarea>
-            </div>
-        </div>
-        <div class="more">
-            <a href="#" class="link-dark"><strong>send</strong></a>
-        </div>
-    </div>
-
-</section>
+<!--отзыв-->
+<!--<section class="thank_you">-->
+<!---->
+<!--    <div class="container-fluid text-center">-->
+<!--        <div class="why_shoose_us">-->
+<!--            <div class="heading-content text-center">-->
+<!--                <h1><strong>Спасибо!</strong></h1>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="container overflow-hidden text-center">-->
+<!--            <div class="mb-5">-->
+<!--                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="имя">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="container overflow-hidden text-center">-->
+<!--            <div class="mb-5">-->
+<!--                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="e-mail">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="container overflow-hidden text-center">-->
+<!--            <div class="mb-5">-->
+<!--                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="сообщение"></textarea>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="more">-->
+<!--            <a href="#" class="link-dark"><strong>send</strong></a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!---->
+<!--</section>-->
 
 
 <section class="contact_us">
@@ -667,10 +665,9 @@ $productList = getProductList();
     <div class="container text-center">
         <div class="row">
             <div class="col">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                    massa.</p>
-                <p class="down">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                    mus.</p>
+                <p>BEERMAX - сеть магазинов, осуществляющая продажу алкоголя различных видов.
+                    Мы стремимся сделать покупки в магазинах нашей сети наиболее комфортными для вас, поэтому постоянно расширяем ассортимент продукции.
+                </p>
             </div>
         </div>
     </div>
@@ -697,6 +694,8 @@ $productList = getProductList();
     <h5>Россия</h5>
     <p>@МдаМакс Inc.,2023 г.Все права защищены.</p>
     <small>или не все</small>
+    <br>
+    <small>Запрещено лицам моложе 18 лет</small>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

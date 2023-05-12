@@ -43,46 +43,78 @@ if (!empty($_POST['username'])
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BEERMAX</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"-->
+<!--          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">-->
+    <!--    <link rel="stylesheet" href="style.css">-->
+    <!--    <link rel="stylesheet" href="media.css">-->
+    <link rel="stylesheet" href="auto_form.css">
 </head>
 <body>
-<section class="thank_you">
 
-    <form method="post" class="container-fluid text-center">
-        <div class="why_shoose_us">
-            <div class="heading-content text-center">
-                <h1><strong>Логин</strong></h1>
-            </div>
-        </div>
-        <div class="container overflow-hidden text-center">
-            <div class="mb-5">
-                <input type="text" name="username" class="form-control" id="exampleFormControlInput1" placeholder="login">
-            </div>
-        </div>
-        <!--        <div class="container overflow-hidden text-center">-->
-        <!--            <div class="mb-5">-->
-        <!--                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="e-mail">-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <div class="container overflow-hidden text-center">
-            <div class="mb-5">
-                <input type="text" name="password" class="form-control" id="exampleFormControlInput1" placeholder="password">
-            </div>
-        </div>
-        <input type="submit">
-        <div>
-            <b style="color: crimson">
-                <?=$errorMessage?>
-            </b>
-        </div>
-        <div class="more">
-            <a href="register_form.php" class="link-dark"><strong>Регистрация</strong></a>
-        </div>
-    </form>
 
-</section>
+<!--    <section class="thank_you">-->
+<!---->
+<!--        <form method="post" class="container-fluid text-center">-->
+<!--            <div class="why_shoose_us">-->
+<!--                <div class="heading-content text-center">-->
+<!--                    <h1><strong>Логин</strong></h1>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="container overflow-hidden text-center">-->
+<!--                <div class="mb-5">-->
+<!--                    <input type="text" name="username" class="form-control" id="exampleFormControlInput1" placeholder="login">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="container overflow-hidden text-center">-->
+<!--                <div class="mb-5">-->
+<!--                    <input type="text" name="password" class="form-control" id="exampleFormControlInput1" placeholder="password">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <input type="submit">-->
+<!--            <div>-->
+<!--                <b style="color: crimson">-->
+<!--                    --><?// //=$errorMessage?>
+<!--                </b>-->
+<!--            </div>-->
+<!--            <div class="more">-->
+<!--                <a href="register_form.php" class="link-dark"><strong>Регистрация</strong></a>-->
+<!--            </div>-->
+<!--        </form>-->
+<!---->
+<!--    </section>-->
+
+
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+
+            <h2 class="active"> Авторизация </h2>
+
+
+
+            <div class="fadeIn first">
+                <img src="https://cdn-icons-png.flaticon.com/512/931/931949.png"  id="icon" alt="User Icon"/>
+            </div>
+
+            <form method="post">
+                <input type="text" name="username"  class="form-control" id="exampleFormControlInput1" placeholder="login">
+                <input type="password" name="password" class="form-control" id="exampleFormControlInput1" placeholder="password">
+
+                <input type="submit" class="fadeIn fourth" value="Войти">
+                <br>
+                <b style="color: crimson">
+                    <?=$errorMessage?>
+                </b>
+            </form>
+
+
+            <div id="formFooter">
+                <a class="underlineHover" href="register_form.php">Регистрация</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
 </body>
 </html>

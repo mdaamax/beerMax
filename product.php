@@ -40,15 +40,13 @@ $product= getProductById($product_id);
 <div class="wrapper mt-5 product-item mb-5">
     <div class="container">
         <div class="row">
-
             <div class="col-12">
                 <h1><?=$product['title']?> (Алкоголь <?=$product['alc']?>% <?=$product['type']?>)</h1>
             </div>
 
             <div class="col-sm-4">
                 <div class="product-item-thumb d-flex justify-content-center">
-                    <img src="https://images.squarespace-cdn.com/content/v1/5287bee0e4b0fd595cc2a60f/1496155488416-4GXO8IFEZSKI8O4N3ZSB/ke17ZwdGBToddI8pDm48kMidd_fVERlblIIVuIb_11BZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpx10iUG6tfMgCBB2It1X-YJ7A5R-MhySWbfhJf8kid0Axv9bsT1zvOjTQZv2qL2czQ/Bottle-of-beer-mock-up-TOONILLA+WEB.png"
-                         alt="">
+                    <img src="<?= getFileById($product['file_id'])?>" >
                 </div>
 
             </div>
@@ -90,6 +88,7 @@ $product= getProductById($product_id);
     </div>
 </div>
 
+</body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
