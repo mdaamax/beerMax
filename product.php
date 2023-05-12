@@ -19,6 +19,8 @@ $product= getProductById($product_id);
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <img src="https://cdn-icons-png.flaticon.com/512/761/761767.png" alt="Logo" width="50" height="48"
+         class="d-inline-block ">
     <a class="navbar-brand" href="index.php">BEERMAX</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
             aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">

@@ -239,7 +239,7 @@ $productList = getProductList();
                     <div class="card" style="width: 20rem;">
                         <!--                        <img src="https://images.squarespace-cdn.com/content/v1/5287bee0e4b0fd595cc2a60f/1496155488416-4GXO8IFEZSKI8O4N3ZSB/ke17ZwdGBToddI8pDm48kMidd_fVERlblIIVuIb_11BZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpx10iUG6tfMgCBB2It1X-YJ7A5R-MhySWbfhJf8kid0Axv9bsT1zvOjTQZv2qL2czQ/Bottle-of-beer-mock-up-TOONILLA+WEB.png"-->
                         <img src="<?= getFileById($product['file_id']) ?>"
-                             class="card-img-top" style="width: 8rem;margin: auto"  alt="...">
+                             class="card-img-top" style="width: 8rem;margin: auto" height="370px" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"><?= $product['title'] ?></h5>
                             <p class="card-price"><?= $product['price'] ?> ₽</p>
