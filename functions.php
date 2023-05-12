@@ -35,7 +35,6 @@ function login($login, $password)
 function createProduct($title, $type_id, $alc, $price, $description, $file)
 {
     $file_id = null;
-    var_dump($file);
     if (!empty($file)) {
         $file_id = insert('INSERT INTO files (filename,type,content,size) VALUES (:filename,:type,:content,:size)', [
             'filename' => $file['name'],
@@ -111,9 +110,9 @@ function getFileById($file_id)
     return 'data:'.$list [0]['type'].';base64,'.$list [0]['content'];
 }
 
-function deleteById()
+function deleteById($product_id)
 {
-    $list = delete('DELETE title,description,id,price,file_id FROM catalog ORDER BY id');
+    $list = delete('DELETE FROM catalog WHERE id = :id',['id'=>$product_id]);
     return $list;
 }
 
